@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.1</title>
+    <style>
+        form{
+            top:10vh;
+            left:10vw
+
+        }
+        .hidenForm{
+            top:0;
+            left:0;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+        .showInfo{
+            top:10vh;
+            left:10vw
+        }
+        .removeInfo{
+            top:0;
+            left:0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Your name:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="age">Your age:</label><br>
+        <input type="number" id="age" name="age" value="" format="[0-9]+"><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" id="email" name="email" value=""><br><br>
+        <input type="button" value="Submit">
+    </form>
+
+   <p class ="infromation"></p>
+   <p></p>
+    <script src="script.js"></script>
+</body>
+</html>
